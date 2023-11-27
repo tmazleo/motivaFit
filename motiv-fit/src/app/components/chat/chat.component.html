@@ -1,0 +1,25 @@
+<!-- message-box.component.html -->
+<div class="container">
+  <h3>
+    Dep. Financeiro
+  </h3>
+  <div class="view">
+
+    <div *ngFor="let mensagem of mensagens" [class.expandida]="deveExpandirAltura" class="mensagem-box">
+      {{ mensagem }}
+    </div>
+    <div *ngIf="imagemUrl" class="imagem-box">
+      <img [src]="imagemUrl" alt="Imagem Enviada" />
+    </div>
+  </div>
+
+  <div class="msg">
+    <input [(ngModel)]="inputMessage" placeholder="Digite sua mensagem" id="inptmsg" />
+    <div class="foto-input">
+      <label for="fotoInput">foto</label>
+      <input type="file" id="fotoInput" (change)="enviarImagem($event)" accept="image/*"/>
+    </div>
+    <button (click)="enviarMensagem()">Enviar</button>
+  </div>
+</div>
+

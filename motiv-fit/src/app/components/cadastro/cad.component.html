@@ -1,0 +1,14 @@
+<form class="cont" (ngSubmit)="onSubmit()">
+
+  <input type="text" id="name" [(ngModel)]="userData.name" name="name" required placeholder="Nome Completo">
+
+
+  <input type="text" id="username" [(ngModel)]="userData.username" name="username" required placeholder="Usuário">
+  <input type="text" id="acesskey" name="acesskey" required placeholder="Chave de Acesso">
+  <input type="text" id="ativ" name="ativ" required placeholder="Atividade Física">
+
+
+  <input type="password" id="password" [(ngModel)]="userData.password" name="password" required placeholder="Senha">
+
+  <button type="submit">Cadastrar</button>
+</form>

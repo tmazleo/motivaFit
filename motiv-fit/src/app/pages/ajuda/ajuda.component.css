@@ -1,0 +1,45 @@
+h3 {
+  font-size: 2.6em;
+  color: #4EC668;
+}
+.d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  font-size: 20px;
+}
+textarea {
+  resize: none;
+  outline: 0;
+  margin-top: 1em;
+  width: 40vw;
+  color: #000;
+  font-size: 1.2em;
+  padding: 1em;
+  background-color: #8f8f8f;
+  border: none;
+}
+textarea:focus {
+  background-color: #fff;
+}
+a {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  text-decoration: none;
+  background-color: red;
+  width: 4vw;
+  height: 3vh;
+  text-align: center;
+  border-radius: 5px;
+}

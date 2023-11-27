@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6vh;
+}
+.containerlog{
+  display: flex;
+  width: 80vw;
+  height: 70vh;
+  justify-content: space-around;
+  margin-top: 6vh;
+}
+hr{
+  height: 60vh;
+  color: #646464;
+}
+a {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #8a5037;
+  width: 8vw;
+  height: 6vh;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 8px;
+}
+a:hover {
+  background-color: #E2835B;
+  box-shadow: 0 0 4px #FC6442;
+}
